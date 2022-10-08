@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{BA806410-F779-461A-B4F1-D97D7289FB5B}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Auto.Website PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Auto.Data/AutoCsvFileDatabase.cs">
+    <Files>
+      <File FileName="Auto.Data/csv-data/owners.csv" Line="43" Column="52" />
+      <File FileName="Auto.Data/csv-data/vehicles.csv" Line="50" Column="1" />
+      <File FileName="Auto.Data/Entities/Model.cs" Line="1" Column="1" />
+      <File FileName="Auto.Data/Entities/Owner.cs" Line="1" Column="1" />
+      <File FileName="Auto.Data/Entities/Vehicle.cs" Line="1" Column="1" />
+      <File FileName="Auto.Data/AutoCsvFileDatabase.cs" Line="32" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Auto" expanded="True">
+            <Node name="Auto.Data" expanded="True">
+              <Node name="csv-data" expanded="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="AutoCsvFileDatabase.cs" selected="True" />
+            </Node>
+            <Node name="Auto.Website" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="Api" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
