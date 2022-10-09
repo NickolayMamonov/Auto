@@ -1,19 +1,17 @@
 ﻿<Properties StartupConfiguration="{BA806410-F779-461A-B4F1-D97D7289FB5B}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Auto.Website PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Auto.Data/AutoCsvFileDatabase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Auto.Website/GraphQL/Queries/OwnerMutation.cs">
     <Files>
-      <File FileName="Auto.Data/csv-data/owners.csv" Line="43" Column="52" />
-      <File FileName="Auto.Data/csv-data/vehicles.csv" Line="50" Column="1" />
-      <File FileName="Auto.Data/Entities/Model.cs" Line="1" Column="1" />
-      <File FileName="Auto.Data/Entities/Owner.cs" Line="1" Column="1" />
-      <File FileName="Auto.Data/Entities/Vehicle.cs" Line="1" Column="1" />
       <File FileName="Auto.Data/AutoCsvFileDatabase.cs" Line="32" Column="1" />
+      <File FileName="Auto.Website/GraphQL/Queries/VehicleMutation.cs" Line="1" Column="1" />
+      <File FileName="Auto.Website/GraphQL/Queries/OwnerQuery.cs" Line="1" Column="1" />
+      <File FileName="Auto.Website/GraphQL/Queries/OwnerMutation.cs" Line="27" Column="74" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,11 +20,17 @@
             <Node name="Auto.Data" expanded="True">
               <Node name="csv-data" expanded="True" />
               <Node name="Entities" expanded="True" />
-              <Node name="AutoCsvFileDatabase.cs" selected="True" />
             </Node>
             <Node name="Auto.Website" expanded="True">
               <Node name="Controllers" expanded="True">
                 <Node name="Api" expanded="True" />
+              </Node>
+              <Node name="GraphQL" expanded="True">
+                <Node name="Graphtypes" expanded="True" />
+                <Node name="Queries" expanded="True">
+                  <Node name="OwnerMutation.cs" selected="True" />
+                </Node>
+                <Node name="Schemas" expanded="True" />
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />

@@ -9,6 +9,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="GraphQL" Version="4.6.1" />
+		<PackageReference Include="GraphQL.MicrosoftDI" Version="4.6.1" />
+		<PackageReference Include="GraphQL.Server.Transports.AspNetCore.SystemTextJson" Version="5.2.2" />
+		<PackageReference Include="GraphQL.Server.Ui.Altair" Version="5.0.0" />
+		<PackageReference Include="GraphQL.SystemTextJson" Version="4.6.1" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.16" />
 		<PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
 		<PackageReference Include="newtonsoft.json" Version="13.0.1" />		
@@ -17,5 +22,11 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Auto.Data\Auto.Data.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="GraphQL\Queries\OwnerMutation.cs">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Compile>
 	</ItemGroup>
 </Project>
