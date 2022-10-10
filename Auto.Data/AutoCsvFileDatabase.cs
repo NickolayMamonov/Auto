@@ -146,18 +146,15 @@ namespace Auto.Data {
             vehicles.Remove(vehicle.Registration);
         }
 
-        public void CreateOwner(Owner owner)
-        {
+        public void CreateOwner(Owner owner) {
             owners.Add(owner.Email, owner);
         }
 
-        public void UpdateOwner(Owner owner,string email)
-        {
+        public void UpdateOwner(Owner owner,string email) {
             owners[email] = owner;
         }
 
-        public void DeleteOwner(Owner owner)
-        {
+        public void DeleteOwner(Owner owner) {
             owners.Remove(owner.Email);
         }
 

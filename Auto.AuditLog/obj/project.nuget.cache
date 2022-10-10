@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZE9BJ22AfAWpzrcc7dAeLHvbL0uym7wsKUIzVNNxglWBM/1NWCrcYThWQIUTNRJxSFMYN47iicrOkHHMHWJj+w==",
+  "success": true,
+  "projectFilePath": "/Users/fegol/Downloads/Auto/Auto.AuditLog/Auto.AuditLog.csproj",
+  "expectedPackageFiles": [
+    "/Users/fegol/.nuget/packages/easynetq/7.2.1/easynetq.7.2.1.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/microsoft.extensions.configuration/7.0.0-rc.1.22426.10/microsoft.extensions.configuration.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0-rc.1.22426.10/microsoft.extensions.configuration.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/microsoft.extensions.configuration.environmentvariables/7.0.0-rc.1.22426.10/microsoft.extensions.configuration.environmentvariables.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/microsoft.extensions.configuration.fileextensions/7.0.0-rc.1.22426.10/microsoft.extensions.configuration.fileextensions.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/microsoft.extensions.configuration.json/7.0.0-rc.1.22426.10/microsoft.extensions.configuration.json.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/microsoft.extensions.fileproviders.abstractions/7.0.0-rc.1.22426.10/microsoft.extensions.fileproviders.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/microsoft.extensions.fileproviders.physical/7.0.0-rc.1.22426.10/microsoft.extensions.fileproviders.physical.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/microsoft.extensions.filesystemglobbing/7.0.0-rc.1.22426.10/microsoft.extensions.filesystemglobbing.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/microsoft.extensions.primitives/7.0.0-rc.1.22426.10/microsoft.extensions.primitives.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/rabbitmq.client/6.4.0/rabbitmq.client.6.4.0.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/system.text.encodings.web/7.0.0-rc.1.22426.10/system.text.encodings.web.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/system.text.json/7.0.0-rc.1.22426.10/system.text.json.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "/Users/fegol/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

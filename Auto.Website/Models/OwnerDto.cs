@@ -11,7 +11,6 @@ namespace Auto.Website.Models
 {
     public class OwnerDto
     {
-       
         public OwnerDto(string Firstname, string Midname,string Lastname, string Email, string OwnersVehicle = null)
         {
             this.Firstname = Firstname;
@@ -23,10 +22,8 @@ namespace Auto.Website.Models
         public string Firstname { get; set; }
         public string Midname { get; set; }
         public string Lastname { get; set; }
-
-        public string PhoneNumber { get; set; }
-
         public string Email { get; set; }
         public string? OwnersVehicle { get; set; }
     }
 }
+

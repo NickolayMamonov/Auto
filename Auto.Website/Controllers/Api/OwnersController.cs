@@ -4,8 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Auto.Data;
 using Auto.Data.Entities;
+using Auto.Messages;
 using Auto.Website.Models;
 using Castle.Core.Internal;
+using EasyNetQ;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -16,6 +18,7 @@ namespace Auto.Website.Controllers.Api
     public class OwnersController : ControllerBase
     {
         private readonly IAutoDatabase db;
+        private readonly IBus _bus;
 
         public OwnersController(IAutoDatabase db)
         {
@@ -97,7 +100,46 @@ namespace Auto.Website.Controllers.Api
             };
             return Ok(json);
         }
-
+        
+        [HttpPost]
+        public IActionResult Add([FromBody] OwnerDto dto)
+        {
+            try
+            {
+                var newVehicle = db.FindVehicle(dto.OwnersVehicle);
+                var newOwner = new Owner {
+                    Firstname = dto.Firstname,
+                    Midname = dto.Midname,
+                    Lastname = dto.Lastname,
+                    Email = dto.Email,
+                    OwnersVehicle = newVehicle
+                };
+                db.CreateOwner(newOwner);
+                PublishNewOwnerMessage(newOwner);
+                var json = newOwner.ToDynamic();
+                json._links = new {
+                    self = new { href = $"/api/owners/{newOwner.Email}" },
+                    vehicle = new { href = $"/api/vehicle/{newOwner.OwnersVehicle.Registration}" }
+                };
+                json._actions = new {
+                    update = new {
+                        method = "PUT",
+                        href = $"/api/owners/{newOwner.Email}",
+                        accept = "application/json"
+                    },
+                    delete = new {
+                        method = "DELETE",
+                        href = $"/api/owners/{newOwner.Email}"
+                    }
+                };
+                return Ok(json);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+        
         // PUT api/owners/update/iwillms@hotmail.com
         [HttpPut]
         [Route("update/{email}")]
@@ -126,6 +168,20 @@ namespace Auto.Website.Controllers.Api
             if (owner == default) return NotFound();
             db.DeleteOwner(owner);
             return NoContent();
+        }
+        
+        private void PublishNewOwnerMessage(Owner owner)
+        {
+            var message = new NewOwnerMessage()
+            {
+                Firstname = owner.Firstname,
+                Midname = owner.Midname,
+                Lastname = owner.Lastname,
+                Email = owner.Email,
+                OwnersVehicle = owner.OwnersVehicle.Registration,
+                CreatedAt = DateTimeOffset.UtcNow
+            };
+            _bus.PubSub.Publish(message);
         }
     }
 }
