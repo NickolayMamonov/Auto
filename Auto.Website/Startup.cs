@@ -8,6 +8,7 @@ using System;
 using System.IO;
 using System.Reflection;
 using Auto.Website.GraphQL.Schemas;
+using EasyNetQ;
 using GraphQL.Server;
 using GraphQL.Types;
 using Microsoft.OpenApi.Models;
@@ -39,6 +40,8 @@ namespace Auto.Website {
                     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                     config.IncludeXmlComments(xmlPath);
                 });
+            var bus = RabbitHutch.CreateBus(Configuration.GetConnectionString("AutoRabbitMQ"));
+            services.AddSingleton<IBus>(bus);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {

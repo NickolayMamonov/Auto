@@ -20,9 +20,11 @@ namespace Auto.Website.Controllers.Api
         private readonly IAutoDatabase db;
         private readonly IBus _bus;
 
-        public OwnersController(IAutoDatabase db)
+        public OwnersController(IAutoDatabase db,IBus bus)
         {
             this.db = db;
+            this._bus = bus;
+
         }
 
         private dynamic Paginate(string url, int index, int count, int total)
@@ -115,7 +117,15 @@ namespace Auto.Website.Controllers.Api
                     OwnersVehicle = newVehicle
                 };
                 db.CreateOwner(newOwner);
-                PublishNewOwnerMessage(newOwner);
+
+                try
+                {
+                    PublishNewOwnerMessage(newOwner);
+                }
+                catch (Exception e)
+                {
+                    
+                }
                 var json = newOwner.ToDynamic();
                 json._links = new {
                     self = new { href = $"/api/owners/{newOwner.Email}" },
