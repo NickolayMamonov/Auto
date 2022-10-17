@@ -85,12 +85,14 @@ public class OwnerMutation: ObjectGraphType
             new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "Firstname"},
             new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "Midname"},
             new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "Lastname"},
+            new QueryArgument<NonNullGraphType<StringGraphType>>{Name = "Email"},
             new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "Registration"}
         ),resolve: ownerContex =>
         {
             var firstname = ownerContex.GetArgument<string>("Firstname");
             var midname = ownerContex.GetArgument<string>("Midname");
             var lastname = ownerContex.GetArgument<string>("Lastname");
+            var email = ownerContex.GetArgument<string>("Email");
             var registration = ownerContex.GetArgument<string>("Registration");
                 
             var newVehicle = db.FindVehicle(registration);
@@ -100,6 +102,7 @@ public class OwnerMutation: ObjectGraphType
                 Firstname = firstname,
                 Midname = midname,
                 Lastname = lastname,
+                Email = email,
                 OwnersVehicle = newVehicle
             };
                 

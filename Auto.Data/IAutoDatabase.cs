@@ -16,13 +16,14 @@ namespace Auto.Data {
 		public Manufacturer FindManufacturer(string code);
         public Owner FindOwnerByEmail(string email);
         public Owner FindOwnerByLastname(string lastname);
-
+        public void CreateOwner(Owner owner);
+        public void UpdateOwner(Owner owner,string email);
+        public void DeleteOwner(Owner owner);
+        
         public void CreateVehicle(Vehicle vehicle);
 		public void UpdateVehicle(Vehicle vehicle);
 		public void DeleteVehicle(Vehicle vehicle);
 
-        public void CreateOwner(Owner owner);
-        public void UpdateOwner(Owner owner,string email);
-        public void DeleteOwner(Owner owner);
+        
     }
 }

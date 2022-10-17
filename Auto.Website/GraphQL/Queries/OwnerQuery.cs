@@ -14,14 +14,14 @@ public class OwnerQuery: ObjectGraphType
     {
         this.db = context;
         Field<OwnerGraphType>("owner", "Запрос получения данных о владельце",
-            new QueryArguments(MakeNonNullStringArgument("name", "ФИО владельца")),
+            new QueryArguments(MakeNonNullStringArgument("email", "ФИО владельца")),
             resolve: GetOwner);
     }
     
     private Owner GetOwner(IResolveFieldContext<object> context)
     {
-        var name = context.GetArgument<string>("name");
-        return db.FindOwnerByLastname(name);
+        var email = context.GetArgument<string>("email");
+        return db.FindOwnerByEmail(email);
     }
     
     private QueryArgument MakeNonNullStringArgument(string name, string description) {

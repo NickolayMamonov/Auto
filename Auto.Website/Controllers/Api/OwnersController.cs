@@ -11,8 +11,7 @@ using EasyNetQ;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace Auto.Website.Controllers.Api
-{
+namespace Auto.Website.Controllers.Api {
     [Route("api/[controller]")]
     [ApiController]
     public class OwnersController : ControllerBase
