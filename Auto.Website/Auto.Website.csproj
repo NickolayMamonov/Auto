@@ -16,6 +16,7 @@
 		<PackageReference Include="GraphQL.Server.Ui.Altair" Version="5.0.0" />
 		<PackageReference Include="GraphQL.SystemTextJson" Version="4.6.1" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.16" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.2" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0-rc.1.22426.10" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0-rc.1.22426.10" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0-rc.1.22426.10" />
@@ -30,10 +31,29 @@
 		<ProjectReference Include="..\Auto.Data\Auto.Data.csproj" />
 		<ProjectReference Include="..\Auto.Messages\Auto.Messages.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+		<AdditionalFiles Include="Views\Home\Index.cshtml" />
+		<AdditionalFiles Include="Views\Home\Privacy.cshtml" />
+		<AdditionalFiles Include="Views\Shared\Error.cshtml" />
+		<AdditionalFiles Include="Views\Shared\_Layout.cshtml" />
+		<AdditionalFiles Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+		<AdditionalFiles Include="Views\_ViewImports.cshtml" />
+		<AdditionalFiles Include="Views\_ViewStart.cshtml" />
+	</ItemGroup>
 
+	<ItemGroup>
+		<AdditionalFiles Include="Views\Home\Index.cshtml" />
+		<AdditionalFiles Include="Views\Home\Privacy.cshtml" />
+		<AdditionalFiles Include="Views\Shared\Error.cshtml" />
+		<AdditionalFiles Include="Views\Shared\_Layout.cshtml" />
+		<AdditionalFiles Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+		<AdditionalFiles Include="Views\_ViewImports.cshtml" />
+		<AdditionalFiles Include="Views\_ViewStart.cshtml" />
+	</ItemGroup>
 	<ItemGroup>
 	  <Compile Update="GraphQL\Queries\OwnerMutation.cs">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Compile>
 	</ItemGroup>
+	
 </Project>

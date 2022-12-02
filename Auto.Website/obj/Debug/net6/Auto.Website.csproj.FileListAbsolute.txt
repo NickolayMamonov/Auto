@@ -107,3 +107,9 @@
 /Users/fegol/Downloads/Auto/Auto.Website/bin/Debug/net6/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
 /Users/fegol/Downloads/Auto/Auto.Website/bin/Debug/net6/Auto.Messages.dll
 /Users/fegol/Downloads/Auto/Auto.Website/bin/Debug/net6/Auto.Messages.pdb
+/Users/fegol/Downloads/Auto/Auto.Website/bin/Debug/net6/Auto.Website.staticwebassets.runtime.json
+/Users/fegol/Downloads/Auto/Auto.Website/bin/Debug/net6/System.Net.WebSockets.WebSocketProtocol.dll
+/Users/fegol/Downloads/Auto/Auto.Website/obj/Debug/net6/Auto.Website.RazorAssemblyInfo.cache
+/Users/fegol/Downloads/Auto/Auto.Website/obj/Debug/net6/Auto.Website.RazorAssemblyInfo.cs
+/Users/fegol/Downloads/Auto/Auto.Website/obj/Debug/net6/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/fegol/Downloads/Auto/Auto.Website/obj/Debug/net6/scopedcss/projectbundle/Auto.Website.bundle.scp.css
