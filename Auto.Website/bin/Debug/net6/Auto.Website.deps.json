@@ -1943,7 +1943,6 @@
           "GraphQL.Server.Transports.AspNetCore.SystemTextJson": "5.2.2",
           "GraphQL.Server.Ui.Altair": "5.0.0",
           "GraphQL.SystemTextJson": "4.6.1",
-          "Microsoft.AspNetCore.SignalR": "1.1.0",
           "Microsoft.EntityFrameworkCore.Proxies": "5.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.6",
           "Microsoft.Extensions.Configuration": "7.0.0-rc.1.22426.10",
@@ -1960,7 +1959,6 @@
       "Auto.Messages/1.0.0": {
         "dependencies": {
           "EasyNetQ": "7.2.1",
-          "Microsoft.AspNetCore.SignalR": "1.1.0",
           "Microsoft.Extensions.Configuration": "7.0.0-rc.1.22426.10",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0-rc.1.22426.10",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "7.0.0-rc.1.22426.10",
